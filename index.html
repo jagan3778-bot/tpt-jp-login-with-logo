@@ -31,10 +31,10 @@
             box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
         }
 
-        /* Logo */
+        /* Tamil Nadu Police Logo */
         .logo {
-            width: 100px;
-            height: 100px;
+            width: 110px;
+            height: 110px;
             object-fit: contain;
             margin-bottom: 15px;
         }
@@ -42,7 +42,7 @@
         h1 {
             color: #002b5c;
             font-size: 28px;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
         .subtitle {
@@ -87,7 +87,6 @@
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
-            transition: 0.3s;
         }
 
         .login-button:hover {
@@ -106,34 +105,44 @@
 
     <div class="login-container">
 
-        <!-- Put your logo file in the same folder and name it logo.png -->
-        <img src="logo.png" alt="Logo" class="logo">
+        <!-- Logo -->
+        <img src="TN POL LOGO.png"
+             alt="Tamil Nadu Police Logo"
+             class="logo">
 
         <h1>Tamil Nadu Police</h1>
+
         <p class="subtitle">Login Portal</p>
 
         <form onsubmit="login(event)">
 
+            <!-- Username -->
             <div class="input-group">
                 <label for="username">Username</label>
+
                 <input
                     type="text"
                     id="username"
+                    name="username"
                     placeholder="Enter username"
                     required
                 >
             </div>
 
+            <!-- Password -->
             <div class="input-group">
                 <label for="password">Password</label>
+
                 <input
                     type="password"
                     id="password"
+                    name="password"
                     placeholder="Enter password"
                     required
                 >
             </div>
 
+            <!-- Login -->
             <button type="submit" class="login-button">
                 Login
             </button>
@@ -150,7 +159,7 @@
         function login(event) {
             event.preventDefault();
 
-            alert("This is a demo login page. No credentials are being submitted.");
+            alert("This is a demo login page.");
         }
     </script>
 
